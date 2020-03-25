@@ -2,7 +2,9 @@
 
 //dynamic image background -
 // use some pics with light background for offline use also
-document.body.style.backgroundImage = "url('https://picsum.photos/1600/900')";
+const height = window.innerHeight;
+const width = window.innerWidth;
+document.body.style.backgroundImage = `url('https://picsum.photos/${width}/${height}')`;
 const timeDisplay = document.getElementById("time");
 const greeting = document.getElementById("greeting");
 const name = document.getElementById("name");
